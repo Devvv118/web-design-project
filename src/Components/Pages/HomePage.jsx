@@ -1,10 +1,9 @@
 // import Form from "../FormOld"
-import ContactForm from "../Form"
+import ContactForm from "../ContactForm"
 
 function HomePage() {
   return (
     <div>
-
       <header>
         <div class="section__container header__container">
           <section id="home" className="imageSlides">
