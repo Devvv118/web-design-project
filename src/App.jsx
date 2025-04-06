@@ -19,7 +19,7 @@ function App() {
         <Route path="/model" element={<Model />} />
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   )
 }
