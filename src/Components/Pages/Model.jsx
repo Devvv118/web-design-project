@@ -21,10 +21,10 @@ function Model() {
         {Object.keys(floorModels).map((floorImage) => (
           <img
             key={floorImage}
-            src={`/${floorImage}`} // ✅ Ensure images are in `public/`
+            src={`/${floorImage}`}
             alt="Floor"
             className="floor-image"
-            onClick={() => setCurrentModel(floorModels[floorImage])} // ✅ Clicking updates the model
+            onClick={() => setCurrentModel(floorModels[floorImage])}
           />
         ))}&nbsp;&nbsp;
       </div>
@@ -33,7 +33,7 @@ function Model() {
         <color attach="background" args={["#F5F5F5"]} />
         <ambientLight intensity={0.1} />
         <directionalLight position={[0, 0, 0]} intensity={1} />
-        <Experience modelPath={`/models/${currentModel}`} /> {/* ✅ Pass selected model */}
+        <Experience modelPath={`/models/${currentModel}`} />
         <OrbitControls enableZoom={true} />
       </Canvas>
     </div>

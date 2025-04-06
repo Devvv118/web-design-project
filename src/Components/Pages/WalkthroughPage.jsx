@@ -1,9 +1,7 @@
-import Header from "../Header"
 import WalkthroughCard from "../WalkthroughCard"
 
 function WalkthroughPage() {
 
-  const httpsURL = ["", "https://discover.matterport.com/space/V4FJYYR4npW", "https://discover.matterport.com/space/pjsmnTb1gA5", "https://discover.matterport.com/space/5WjJN1zDRNW"]
   const embedURL = ["", "https://my.matterport.com/show?play=1&lang=en-US&m=V4FJYYR4npW", "https://my.matterport.com/show?play=1&lang=en-US&m=pjsmnTb1gA5","https://my.matterport.com/show?play=1&lang=en-US&m=5WjJN1zDRNW"]
   const title = ["Coming Soon!", "Family Caravan", "The Wysteria Plus", "The Wildflower"];
   const imgs = ["", "/walkthru1.gif", "/walkthru2.webp", "/walkthru3.webp",]
@@ -17,11 +15,24 @@ function WalkthroughPage() {
 
   return (
     <div class="walkthrough-page">
-      <Header
-        h1Text="Walkthroughs"
-        pText="Explore our collection of virual tours!"
-        img="/living2.jpg"
-      />
+
+      <header>
+        <div class="section__container header__container">
+          <img src="/living2.jpg" alt="header" />
+          <div class="header__ribbon">
+            <div class="header__content">
+              <h1 class="section__header">Walkthroughs</h1>
+              <p>
+                Explore our collection of virual tours!
+              </p>
+            </div>
+          </div>
+          <div class="arrow__down">
+            <a href="#footer" class="ri-arrow-down-line"> </a>
+          </div>
+          <div class="image__box"></div>
+        </div>
+      </header>
 
       <div class="walkthrough__header">
         <h1>Here's a demo to get you started</h1>

@@ -8,21 +8,14 @@ function Footer() {
             Design your dream room and elevate
             the style and functionality of your homes and workspaces.
           </p>
+        </div>
+        
+        <div class="footer__col">
+          <h4>Contact Us</h4>
           <p><i class="ri-phone-fill"></i> +919876598765</p>
           <p>
             <i class="ri-map-pin-2-fill"></i> #160, Katpadi, Vellore-632014, Tamil Nadu
           </p>
-        </div>
-        
-        <div class="footer__col">
-          <h4>About</h4>
-          <p>About Us</p>
-          <p>Contact Us</p>
-        </div>
-        <div class="footer__col">
-          <h4>Get in touch</h4>
-          <p>Questions or feedback?</p>
-          <p>We'd love to hear from you.</p>
         </div>
       </div>
       <div class="footer__bar">

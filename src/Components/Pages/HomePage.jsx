@@ -1,14 +1,37 @@
-import Header from "../Header"
+// import Form from "../FormOld"
+import ContactForm from "../Form"
 
 function HomePage() {
   return (
     <div>
-      
-      <Header 
-        h1Text="Design Your Dream Room"
-        pText="Creating spaces that reflect your unique style."
-        img="/living1.jpg"
-      />
+
+      <header>
+        <div class="section__container header__container">
+          <section id="home" className="imageSlides">
+            <video 
+              autoPlay 
+              muted 
+              loop 
+              height="830" 
+              width="100%" 
+              src="/v.mp4"
+            >
+            </video>
+          </section>
+          <div class="header__ribbon">
+            <div class="header__content">
+              <h1 class="section__header">Design Your Dream Room</h1>
+              <p>
+                Creating spaces that reflect your unique style.
+              </p>
+            </div>
+          </div>
+          {/* <div class="arrow__down">
+            <a href="#footer" class="ri-arrow-down-line"> </a>
+          </div> */}
+          <div class="image__box"></div>
+        </div>
+      </header>
 
       <section id="our-story">
       <h2>Our Story</h2>
@@ -150,10 +173,10 @@ function HomePage() {
     <section class="section__container customer__container">
       <div class="customer__nav">
         <h2 class="section__header">What our customers are saying</h2>
-        <div class="customer__nav__icons">
+        {/* <div class="customer__nav__icons">
           <span><i class="ri-arrow-left-line"></i></span>
           <span><i class="ri-arrow-right-line"></i></span>
-        </div>
+        </div> */}
       </div>
       <div class="customer__grid">
         <div class="customer__card">
@@ -165,7 +188,7 @@ function HomePage() {
             satisfying by giving elegent impressions.
           </p>
           <div class="customer__content">
-            <span><img src="/pic-1.jpeg" alt="user" /></span>
+            {/* <span><img src="/pic-1.jpeg" alt="user" /></span> */}
             <div class="customer__details">
               <h4>Aarav Kapoor</h4>
               <p>Product Designer</p>
@@ -182,7 +205,7 @@ function HomePage() {
             in accordance with what I wanted.
           </p>
           <div class="customer__content">
-            <span><img src="/pic-2.jpg" alt="user" /></span>
+            {/* <span><img src="/pic-2.jpg" alt="user" /></span> */}
             <div class="customer__details">
               <h4>Ria Manoj</h4>
               <p>HR, Infosys</p>
@@ -192,7 +215,9 @@ function HomePage() {
       </div>
     </section>
 
-    <section class="section__container subscribe__container">
+    <ContactForm />
+
+    {/* <section class="section__container subscribe__container">
       <h2 class="section__header">Subscribe to get the latest news about us</h2>
       <p class="subscribe__description">
         We recommend you to subscribe to our newspaper, enter your email below
@@ -202,7 +227,7 @@ function HomePage() {
         <input type="text" id="email" placeholder="Enter your email address" />
         <button type="button" onclick="chk_email()">Subscribe</button>
       </form>
-    </section>
+    </section> */}
 
     </div>
   )
