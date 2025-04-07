@@ -15,23 +15,6 @@ function HomePage() {
           src="/v.mp4"
         >
         </video>
-        {/* <div class="section__container header__container">
-          <section id="home" className="imageSlides">
-            
-          </section>
-          <div class="header__ribbon">
-            <div class="header__content">
-              <h1 class="section__header">Design Your Dream Room</h1>
-              
-              <p>
-                Creating spaces that reflect your unique style.
-              </p>
-              
-              
-            </div>
-          </div>
-          <div class="image__box"></div>
-        </div> */}
       </header>
 
       <section id="our-story">
@@ -114,21 +97,12 @@ function HomePage() {
           made by people who are professionals in their fields with an elegant
           and luxurious style and with premium quality materials.
         </p>
+        <br /><br />
         <div class="experience__features">
-          <div class="experience__col">
-            <h3>12</h3>
-            <p>Years<br />experience</p>
-          </div>
-          <div class="experience__col">
-            <h3>46</h3>
-            <p>Awards<br />gained</p>
-          </div>
-          <div class="experience__col">
-            <h3>375</h3>
-            <p>Happy<br />customers</p>
-          </div>
+          <a href="/walkthrough" class="button">Walkthroughs</a>
+          <a href="/model" class="button">Model</a>
         </div>
-        <a href="learn_more.html" class="button">Learn more</a>
+        
       </div>
     </section>
 

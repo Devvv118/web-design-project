@@ -1,5 +1,4 @@
 import { useRef } from "react";
-// import "../../ImageSlider.css";
 
 import img1 from "/rimg1.png";
 import img2 from "/rimg2.png";
