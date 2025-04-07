@@ -11,10 +11,6 @@ function NavBar() {
         <a href="/model" class="link">Model</a>
         <a href="/#footer" class="link">About Us</a>
       </ul>
-      {/* <div class="nav__icons">
-        <span><i class="ri-search-line"></i></span>
-        <span><i class="ri-menu-3-line"></i></span>
-      </div> */}
     </nav>
   )
 }

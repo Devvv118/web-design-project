@@ -11,7 +11,7 @@ function HomePage() {
               autoPlay 
               muted 
               loop 
-              height="830" 
+              height="830   " 
               width="100%" 
               src="/v.mp4"
             >
@@ -25,9 +25,6 @@ function HomePage() {
               </p>
             </div>
           </div>
-          {/* <div class="arrow__down">
-            <a href="#footer" class="ri-arrow-down-line"> </a>
-          </div> */}
           <div class="image__box"></div>
         </div>
       </header>
@@ -88,7 +85,7 @@ function HomePage() {
           <div class="benefits__content">
             <h4>Free Shipping</h4>
             <p>
-              Free shipping every time you buy furniture from us without
+              Free shipping every time you buy from us without
               exception.
             </p>
           </div>
@@ -98,7 +95,7 @@ function HomePage() {
           <div class="benefits__content">
             <h4>Warranty</h4>
             <p>
-              Every time you buy our furniture products, you will get a warranty
+              Every time you buy from us, you will get a warranty
               without exception.
             </p>
           </div>
@@ -164,18 +161,14 @@ function HomePage() {
         </div>
       </div>
       <div class="process__image">
-        <img src="/office1.jpg" alt="process" />
-        <img src="/office2.jpg" alt="process" />
+        <img src="/model2.png" alt="process" />
+        <img src="/walkthru0.png" alt="process" />
       </div>
     </section>
 
     <section class="section__container customer__container">
       <div class="customer__nav">
         <h2 class="section__header">What our customers are saying</h2>
-        {/* <div class="customer__nav__icons">
-          <span><i class="ri-arrow-left-line"></i></span>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div> */}
       </div>
       <div class="customer__grid">
         <div class="customer__card">
@@ -187,7 +180,6 @@ function HomePage() {
             satisfying by giving elegent impressions.
           </p>
           <div class="customer__content">
-            {/* <span><img src="/pic-1.jpeg" alt="user" /></span> */}
             <div class="customer__details">
               <h4>Aarav Kapoor</h4>
               <p>Product Designer</p>
@@ -204,7 +196,6 @@ function HomePage() {
             in accordance with what I wanted.
           </p>
           <div class="customer__content">
-            {/* <span><img src="/pic-2.jpg" alt="user" /></span> */}
             <div class="customer__details">
               <h4>Ria Manoj</h4>
               <p>HR, Infosys</p>
@@ -215,18 +206,6 @@ function HomePage() {
     </section>
 
     <ContactForm />
-
-    {/* <section class="section__container subscribe__container">
-      <h2 class="section__header">Subscribe to get the latest news about us</h2>
-      <p class="subscribe__description">
-        We recommend you to subscribe to our newspaper, enter your email below
-        to get our daily update about us.
-      </p>
-      <form>
-        <input type="text" id="email" placeholder="Enter your email address" />
-        <button type="button" onclick="chk_email()">Subscribe</button>
-      </form>
-    </section> */}
 
     </div>
   )
