@@ -27,9 +27,6 @@ function WalkthroughPage() {
               </p>
             </div>
           </div>
-          <div class="arrow__down">
-            <a href="#footer" class="ri-arrow-down-line"> </a>
-          </div>
           <div class="image__box"></div>
         </div>
       </header>

@@ -1,32 +1,37 @@
 // import Form from "../FormOld"
 import ContactForm from "../ContactForm"
+import ImageSlider from "../ImageSlider"
 
 function HomePage() {
   return (
     <div>
       <header>
-        <div class="section__container header__container">
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          height="830   " 
+          width="100%" 
+          src="/v.mp4"
+        >
+        </video>
+        {/* <div class="section__container header__container">
           <section id="home" className="imageSlides">
-            <video 
-              autoPlay 
-              muted 
-              loop 
-              height="830   " 
-              width="100%" 
-              src="/v.mp4"
-            >
-            </video>
+            
           </section>
           <div class="header__ribbon">
             <div class="header__content">
               <h1 class="section__header">Design Your Dream Room</h1>
+              
               <p>
                 Creating spaces that reflect your unique style.
               </p>
+              
+              
             </div>
           </div>
           <div class="image__box"></div>
-        </div>
+        </div> */}
       </header>
 
       <section id="our-story">
@@ -57,12 +62,9 @@ function HomePage() {
     <section id="our-work">
         <h2>Our Work</h2>
         <div class="gallery">
-            <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-113a4ab/www.decorilla.com/online-decorating/wp-content/uploads/2024/05/Luxury-contemporary-interior-design-style-by-Decorilla-1024x574-345x.jpg" alt="Project 1" />
-            <img src="https://images.woodenstreet.de/image/data/blog-images/14-Nov-2024/3.jpg" alt="Project 2" />
-            <img src="https://static.wixstatic.com/media/bf8702_9402089a2bf44b0094c4ddb0d27c17a9~mv2.webp/v1/fill/w_738,h_511,al_c,q_85,enc_avif,quality_auto/bf8702_9402089a2bf44b0094c4ddb0d27c17a9~mv2.webp" alt="Project 3" />
-            <img src="https://cdn.decorilla.com/images/1600/2113bb41-db94-4db7-924f-e739a38e259a/Online-Designer-BusinessOffice-3D-Model-1.jpg?cv=1" />
-            <img src="https://officebanao.com/wp-content/uploads/2023/06/Hero-Image.jpg" />
-            <img src="https://images.ctfassets.net/rg5y8r6t6cjr/6OtgaBRnouvW7gdQNRtCEA/a277d04af7a42c63f8d5a418fa2d9b58/nojhproduct-moderncoastal-interior-3birdsrenovations-house14-jameshardie-198.jpg" />
+            <section>
+              <ImageSlider />
+            </section>
         </div>
     </section>
 
@@ -83,20 +85,18 @@ function HomePage() {
         <div class="benefits__card">
           <span><i class="ri-truck-line"></i></span>
           <div class="benefits__content">
-            <h4>Free Shipping</h4>
+            <h4>Quick Implementation</h4>
             <p>
-              Free shipping every time you buy from us without
-              exception.
+              Your design will be contructed within the time promised. 
             </p>
           </div>
         </div>
         <div class="benefits__card">
           <span><i class="ri-checkbox-circle-line"></i></span>
           <div class="benefits__content">
-            <h4>Warranty</h4>
+            <h4>Flawless Execution</h4>
             <p>
-              Every time you buy from us, you will get a warranty
-              without exception.
+              Your design ideas will be implemented without compromises.
             </p>
           </div>
         </div>
@@ -134,7 +134,7 @@ function HomePage() {
 
     <section class="section__container process__container">
       <div class="process__content">
-        <h2 class="section__header">We provide the best process experience</h2>
+        <h2 class="section__header">How we work</h2>
         <div class="process__grid">
           <div class="number">01</div>
           <h4>Designing</h4>
@@ -168,44 +168,10 @@ function HomePage() {
 
     <section class="section__container customer__container">
       <div class="customer__nav">
-        <h2 class="section__header">What our customers are saying</h2>
+        <h2 class="section__header">Your feedback is valuable to us</h2>
       </div>
-      <div class="customer__grid">
-        <div class="customer__card">
-          <span><i class="ri-double-quotes-l"></i></span>
-          <h4 class="customer__title">The result given are very satisfying</h4>
-          <p class="customer__description">
-            Being able to work with "Space Integration" was an extraordinary experience. They
-            provide excellent service and the results given were also very
-            satisfying by giving elegent impressions.
-          </p>
-          <div class="customer__content">
-            <div class="customer__details">
-              <h4>Aarav Kapoor</h4>
-              <p>Product Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="customer__card">
-          <span><i class="ri-double-quotes-l"></i></span>
-          <h4 class="customer__title">
-            The service provided is very good and the website is user friendly
-          </h4>
-          <p class="customer__description">
-            When I wanted to create an inspiring workspace, I designed it through "Space Integration". The results given were
-            in accordance with what I wanted.
-          </p>
-          <div class="customer__content">
-            <div class="customer__details">
-              <h4>Ria Manoj</h4>
-              <p>HR, Infosys</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ContactForm />
     </section>
-
-    <ContactForm />
 
     </div>
   )
